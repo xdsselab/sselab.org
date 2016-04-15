@@ -158,7 +158,7 @@ module.exports = function(grunt) {
     cssmin: {
       dist: {
         files: {
-          '<%= appConfig.dist %>/styles/main.css': [
+          '<%= appConfig.dist %>/assets/css/main.css': [
             '.tmp/styles/*.css'
           ]
         }
@@ -247,8 +247,7 @@ module.exports = function(grunt) {
             'assets/images/**/*',
             'data/**/*',
             'assets/js/html5shiv.js',
-            'assets/js/respond.min.js',
-            'public/**/*'
+            'assets/js/respond.min.js'
           ]
         }, {
           // copy fonts

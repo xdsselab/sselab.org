@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'texgyreadventorregular';
-    src: url('../public/texgyreadventor-regular-webfont.ttf') format('truetype');
+    src: url('../fonts/fonts/texgyreadventor-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
      font-family: 'open_sansregular';
-      src:url('../public/OpenSans-Regular-webfont.ttf') format('truetype');
+      src:url('../fonts/fonts/OpenSans-Regular-webfont.ttf') format('truetype');
 }
 body {
 	font-family: 'open_sansregular';
@@ -20,7 +20,7 @@ body {
 }
 .header_bg1 {
 	border-top:8px groove #136BC5;
-	background: url('../public/slider_bg.jpg') no-repeat  50%;
+	background: url('../images/slider_bg.jpg') no-repeat  50%;
 	background-size: 100%;
 }
 .header{
@@ -99,7 +99,7 @@ body {
 }
 /* start slider */
 .slider_bg{
-	background: url('../public/slider_bg.jpg') no-repeat;
+	background: url('../images/slider_bg.jpg') no-repeat;
 	background-size: 100%;
 }
 .slider{
@@ -470,7 +470,7 @@ body {
 	width:45px;
 	height:45px;
 	display:block;
-	background:url(../public/social-icons.png) no-repeat;
+	background:url(../images/social-icons.png) no-repeat;
 	margin:0 auto;
 }
 .social_network i.twitter-icon{
@@ -991,19 +991,22 @@ div.blog div.blog_body h1, div.blog div.blog_body h2, div.blog div.blog_body h3,
 }
 
 div.blog div.blog_body h1:hover a.anchor, div.blog div.blog_body h2:hover a.anchor, div.blog div.blog_body h3:hover a.anchor, div.blog div.blog_body h4:hover a.anchor, div.blog div.blog_body h5:hover a.anchor, div.blog div.blog_body h6:hover a.anchor {
-  /*background: url("../public/modules/styleguide/para.png") no-repeat 10px center;*/
+  /*background: url("../images/modules/styleguide/para.png") no-repeat 10px center;*/
   text-decoration: none;
 }
 
 div.blog div.blog_body h1 {
   font-size: 28px;
   color: black;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
 }
 
 div.blog div.blog_body h2 {
   font-size: 24px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #eee;
   color: black;
+  padding-bottom: 12px;
 }
 
 div.blog div.blog_body h3 {
@@ -1028,7 +1031,7 @@ div.blog div.blog_body p, div.blog div.blog_body blockquote, div.blog div.blog_b
 }
 
 div.blog div.blog_body hr {
-  /*background: transparent url("../public/modules/pulls/dirty-shade.png") repeat-x 0 0;*/
+  /*background: transparent url("../images/modules/pulls/dirty-shade.png") repeat-x 0 0;*/
   border: 0 none;
   color: #cccccc;
   height: 4px;

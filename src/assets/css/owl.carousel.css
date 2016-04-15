@@ -87,13 +87,13 @@
 	position: absolute;
 	top: 23%;
 	left: -3%;
-	background: url(../public/c-arrows.png) no-repeat;
+	background: url(../images/c-arrows.png) no-repeat;
 }
 .owl-next{
 	position: absolute;
 	top:23%;
 	right: -4%;
-	background: url(../public/c-arrows.png) no-repeat -39px 0px;
+	background: url(../images/c-arrows.png) no-repeat -39px 0px;
 }
 /* Styling Pagination*/
 
@@ -113,7 +113,7 @@
 	-moz-border-radius: 20px;
 	-o-border-radius: 20px;
 	border-radius: 20px;
-	background: url(../public/c-arrows.png) no-repeat;
+	background: url(../images/c-arrows.png) no-repeat;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
@@ -139,7 +139,7 @@
 /* preloading images */
 .owl-item.loading{
 	min-height: 150px;
-	background: url('../public/AjaxLoader.gif') no-repeat center center
+	background: url('../images/AjaxLoader.gif') no-repeat center center
 }
 /*
  * 	Core Owl Carousel CSS File
