@@ -9,7 +9,7 @@ angular.module("sselabWebApp").controller("BlogCtrl", function ($scope, $routePa
   var blogTag = $routeParams.tag;
 
   // pagination
-  var limit = 10;
+  var limit = 5;
   var currentPage = $routeParams.currentPage || 1;
 
   var blogs = [
@@ -86,12 +86,31 @@ angular.module("sselabWebApp").controller("BlogCtrl", function ($scope, $routePa
               hljs.highlightBlock(block);
             });
           });
+          $scope.$watch("viewContentLoaded", function() {
+            (function() {
+              var d = document, s = d.createElement('script');
+              s.src = '//sselab.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          });
         }).error(function () {
           console.warn(blogTitle + " not existed!");
           $scope.blogData.content = $sce.trustAsHtml("<h2>No such file found.</h2>");
         });
       }
     }
+  } else {
+    $scope.$watch("viewContentLoaded", function() {
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//sselab.disqus.com/count.js';
+        s.async = 'async';
+        s.id = 'dsq-count-scr';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    });
   }
 
 }).filter("blogNameGenerator", function() {
