@@ -192,22 +192,23 @@ module.exports = function(grunt) {
 
     concurrent: {
       dist: [
-        'copy:styles',
-        'imagemin'
+        'copy:styles'
+        // ,
+        // 'imagemin'
       ]
     },
 
-    imagemin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= appConfig.app %>/assets/images',
-          // src: '{,*/}*.{gif, jpeg, jpg, png}',
-          src: 'assets/images/**/*.{gif, jpeg, jpg, png}',
-          dest: '<%= appConfig.dist %>/assets/images'
-        }]
-      }
-    },
+    // imagemin: {
+    //   dist: {
+    //     files: [{
+    //       expand: true,
+    //       cwd: '<%= appConfig.app %>/assets/images',
+    //       // src: '{,*/}*.{gif, jpeg, jpg, png}',
+    //       src: 'assets/images/**/*.{gif, jpeg, jpg, png}',
+    //       dest: '<%= appConfig.dist %>/assets/images'
+    //     }]
+    //   }
+    // },
 
     htmlmin: {
       dist: {

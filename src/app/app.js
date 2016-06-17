@@ -45,5 +45,5 @@ angular.module("sselabWebApp", ['ngRoute'])
         redirectTo: '/'
       });
 
-      $compileProvider.aHrefSanitizationWhitelist(/^(http):/);
+      $compileProvider.aHrefSanitizationWhitelist(/^(http|https|file):/);
   });
